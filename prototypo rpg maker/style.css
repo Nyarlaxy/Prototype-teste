@@ -1,0 +1,246 @@
+*{
+  padding: 0px;
+  margin: 0px;
+}
+
+body {
+  display: grid;
+  background-image: url('wallpaper\ JHIN.gif');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  color: ghostwhite;
+  display: grid;
+  grid-template-columns: 50px 130px 250px 250px 250px 250px 10px;
+}
+
+section, p, li, dt,dl,dd {
+  grid-column: 3/7;
+}
+/* ================================================ */
+/*===================Fonts========================= */
+/* ================================================ */
+
+@font-face {
+  font-family:"Tpixel" ;
+  src: url("fonts/ka1.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Tgameplay';
+  src: url("fonts/upheavtt.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'pixelgotico';
+  src: url("fonts/pixelgotico.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* tipos de fonte */
+/*
+- opentype (otf)
+- truetype (ttf)
+- embedded-opentype
+- truetype-aat (Apple Advanced Typografhy)
+- svg
+*/
+
+
+/*================================================= */
+
+/*Animação do menu */
+@keyframes show {
+  from {
+    opacity: 0;
+    transform:  translate3d(-20px,0,0);
+  } 
+  to {
+    opacity: 1;
+    transform: translate3d(0,0,0);
+  }
+}
+
+
+.IconeMenu {
+  width: 50px;
+  columns: 2;
+  background-color: #730400;
+  border-radius: 4px;
+  
+}
+
+.lateral a {
+  opacity: 0,3;
+  font-family: "pixelgotico";
+  color: black;
+  outline: none;
+  display: block;
+  padding: 20px 5px;
+  text-decoration: none;
+  
+}
+
+.lateral a:hover{
+  background: black;
+  color: #730400;
+}
+
+ul {
+  list-style: none;
+  top: 50px;
+
+}
+
+.lateral{
+  opacity: 0,3;
+  background-color: #730400;
+  width: 130px;
+  position:absolute;
+  height:auto;
+  left: 50px;
+  animation: show .3s forwards;
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  
+  animation: show .5s forwards;
+  columns: 1/2;
+}
+
+.desativado {
+  display: none;
+}
+
+.ativo {
+  display: block;
+  animation: show 0.5s forwards;
+}
+.ativado {
+  animation: show 1s forwards;
+}
+/*===========================================================================================
+==============================================================================================*/
+
+.menuinicial {
+  grid-column: 3/9;
+  background-color: #730400;
+  padding: 3px;
+  border-radius: 3px;
+  height: 50px;
+  width: 100%;
+}
+
+.menuinicial h1{
+  
+  font-style: normal;
+  font-family: "Tpixel", Helvetica, sans-serif;
+  color:black;
+  position:center;
+  font-size: 40px;
+}
+
+.titulo {
+  font-family: "Tgameplay", 'Times New Roman', Times, serif;
+  position: absolute;
+  height: 80px;
+  font-size: 5rem;
+  line-height: 1;
+  font-weight: 400;
+  margin-bottom: 1rem;
+  grid-column: 1 / 4;
+}
+
+section {
+  width: 100%;
+  height: 100%;
+}
+
+.primeiroP{
+  position: block !important;
+  color: red;
+  padding: 10px;
+  width: 100%;
+  margin-block-start: 100px;
+
+}
+
+section p {
+  position: block !important;
+  color:snow;
+  padding: 10px;
+  width: 100%;
+}
+
+ol {
+  list-style-type: none;
+}
+
+.lista {
+background: darkred;
+border-radius: 10px;
+width: 300px;
+position: relative;
+padding-bottom: 10px;
+grid-column: 3/6;
+position: absolute;
+border-color: black;
+border-style:ridge;
+
+}
+.aliados {
+  grid-column: 3;
+  left: 0px;
+}
+.neutros {
+  grid-column: 4;
+  left: 250px;
+}
+.Inimigos {
+  grid-column: 5;
+  left: 500px;
+}
+.boss {
+  grid-column: 6;
+  left: 750px;
+
+}
+
+section #personagens li {
+  border: black;
+  color: midnightblue;
+}
+
+footer {
+  grid-column: 1/9;
+
+}
+
+footer div {
+  position: absolute;
+  bottom: -69px;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 20px;
+  margin-bottom: 2rem;
+  background: #730400;
+  color: black;
+}
+
+.tabela {
+  border-style:inherit;
+  opacity: 30;
+  border-radius: 4px;
+  background-color:teal;
+  opacity: 100;
+  padding: 5px;
+}
+
+.sobtabela {
+  padding: 10px;
+  background-color:#52CFF5;
+}
